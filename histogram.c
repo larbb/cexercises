@@ -28,7 +28,7 @@ int main()
         }
     }
     for (int i = 0; i <= MAX; ++i) {
-        printf("%d ", i);
+        printf("%2d ", i);
         for (int a = 0; a < nlength[i]; ++a)
             printf("*");
 
