@@ -2,7 +2,7 @@
 
 #define LIM 100
 
-int main() 
+int main(void) 
 {
     int i, c;
     char s[LIM];
