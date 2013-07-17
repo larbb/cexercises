@@ -59,11 +59,14 @@ int htoi(char s[])
         hex *= 16;
         if(isdigit(s[i])) {
             hex *= 16 + s[i] - '0';
-        } else if (s[i] >= 'a' && s[i] <= 'f') {
+        }
+         else if (s[i] >= 'a' && s[i] <= 'f') {
             hex += 10 + (s[i] - 'a');
-        } else if (s[i] >= 'A' && s[i] <= 'F') {
+        }
+         else if (s[i] >= 'A' && s[i] <= 'F') {
             hex += 10 + (s[i] -'A');
-        } else {
+        }
+         else {
             printf("No viable data");
             return 0;
         }
