@@ -15,8 +15,8 @@ int main()
 	// while there are still elements to look at and we haven't yet found 
 	while (mid != end && *mid != sought) {  //is the element we want in the second half?
 		if(sought < *mid)
-			end = mid;  //if so, adjuest the range to ignore the second half
-		else //the elemtn we want is in the else
+			end = mid;  //if so, adjust the range to ignore the second half
+		else //the element we want is in the else
 			beg = mid + 1; //start by looking with the element just after mid
 		mid = beg + (end - beg); //new midpoint
 	}	
