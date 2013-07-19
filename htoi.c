@@ -68,7 +68,7 @@ int htoi(char s[])
         }
          else {
             printf("No viable data");
-            return 0;
+            return -1; // non-zero indicated error
         }
     }
 
