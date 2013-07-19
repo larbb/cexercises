@@ -17,10 +17,6 @@ return 0;
 }
 
 
-
-
-
-
 /* getline: reads line into s, returns length */
 int ggetline(char s[], int lim)
 {
