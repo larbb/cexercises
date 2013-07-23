@@ -35,7 +35,8 @@ int ggetline(char s[], int lim)
 void squeeze(char s1[], char s2[])
 {
     int j, l, i, k;
-
+    
+    j = 0;
     for (i = 0; s2[i] != '\0'; i++) {
         for (k = l = 0; s2[j] != '\0'; j++) {
             if (s1[j] != s2[i])
