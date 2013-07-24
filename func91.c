@@ -4,7 +4,8 @@ int m91(int n);
 
 int main(int argc, char **argv)
 {
-    printf("%u\n", m91(strtoul(argv[1], NULL, 10)));
+    if (argv[1]) 
+        printf("%u\n", m91(strtoul(argv[1], NULL, 10)));
     return 0;
 }
 
