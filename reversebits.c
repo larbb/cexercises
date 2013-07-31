@@ -17,8 +17,8 @@ int main()
 
 unsigned char ReverseBits(unsigned char v)
 {
-    unsigned r = v;
-    int s = sizeof(v) * CHAR_BIT - 1;
+    register unsigned r = v;
+    register int s = sizeof(v) * CHAR_BIT - 1;
     for (v >>= 1; v; v >>= 1) {
         r <<= 1; r |= v & 1; s--;
     }
