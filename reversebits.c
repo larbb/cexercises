@@ -9,7 +9,7 @@ int main()
 {
     struct timespec ts, ts2;
     clock_gettime(CLOCK_MONOTONIC_RAW, &ts);
-    ReverseBits(54);
+    printf("%d\n", ReverseBits(86));
     clock_gettime(CLOCK_MONOTONIC_RAW, &ts2);
     printf("%f\n", (double)ts2.tv_nsec - ts.tv_nsec);
     return 0;
