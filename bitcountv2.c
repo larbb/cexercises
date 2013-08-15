@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 int bitcount(unsigned x) 
 {
     int b;
-    for (b = 0; x; x &= (x - 1)) /* x != 0 due to RMB being deleted in x. Faster bit count then listed in K&R 2 */
+    for (b = 0; x; x &= (x - 1)) /* x != 0. due to RMB being deleted in x. Faster bit count then listed in K&R 2 */
         b++;
     return b;
 }
